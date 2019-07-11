@@ -1,6 +1,6 @@
 const Discord = require('discord.js')
 const client = new Discord.Client()
-const prefix = "." // تقدر تغيره
+const prefix = "$" // تقدر تغيره
     const blow = new Set()
     client.on('message', message => {
   var price = ''
@@ -9,13 +9,11 @@ const prefix = "." // تقدر تغيره
              let fouroulou = new Discord.RichEmbed()
           .setColor("#36393e")
           .setAuthor(message.author.tag,message.author.avatarURL)
-          .setDescription(`Our plans :
-                                       ** -Good S **    
-                                       ** -Price:30k Probot **
-                                       ** -To Buy: \`.Good \` **
-  
-
-        557181389100023839on go to <#557181389100023839>`)  
+          .setDescription(`Bater :
+                                       ** -Seler**    
+                                       ** -Price:15k Probot **
+                                       ** -To Buy: #credits <@557181389100023839>15000 ` **
+)  
       .setTimestamp()
     let filter = m => m.author.id === message.author.id;
    if(message.content.startsWith(".buy")){
